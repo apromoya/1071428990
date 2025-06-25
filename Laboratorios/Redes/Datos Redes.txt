@@ -1,0 +1,24 @@
+Datos Redes
+Comandos
+
+
+hostname  	//Sale nombre de maquina "Nombre host" // BEL-205-LW-004
+getmac 		//dirección física mac
+localhost 	//Equivale  dirección 127.0.0.1 //
+arp /a 		//(direcciones ARP Address Resolution Protocol ip asignadas)
+
+ipconfig /all 		//datos adaptadores red //10.13.181.194
+ipconfig /all | find 	//Descripción (nombre adaptadores red)
+
+netstat		//(conexiones activas ip y puertos al pc)
+
+
+nslookup nombrepc	// (diagnostico infraestructura red y nombre dominio)
+tracert nombrepc	//(diagnostico rutas destino)
+pathping nombrepç 	//(latencia red)
+
+arp /a 		//direcciones ARP 
+ping ip    	//envió de paquetes		"ip= remplazar EJ 10.13.181.194"
+ping ip -t 	//envió de paquetes sostenido
+
+-------------------------------------
