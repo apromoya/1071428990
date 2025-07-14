@@ -1,0 +1,64 @@
+Ciberseguridad 09-07-2025
+
+Se esta haciendo un ejemplo, en Packet Tracer, sobre una empresa de 3 pisos, donde se le va dar a cada una de ellas va a tener  un vlan diferente con un ip, diferente, un server va dar IP a los equipos de forma DHCP
+
+
+
+Escenario # 2    Red LAN en una sede donde se van a tener 3 VLANs y un server con dhcp para que entregue el direccionamiento IP a las máquinas
+
+0) Dibujar la topología ubicando las máquinas y el server, asignándoles un nombre, según el planteamiento y ubicándolos en un puerto consecutivo, pero tomando nota de cada puerto.
+
+La red es 192.168.X.0/24
+
+I) Las VLANs tienen:
+   Un nro. que las identifica (único)
+   Un nombre
+   Una IP 
+
+II) VLANs:
+2: Financiera    192.168.2.1/24
+3: Presidencia   192.168.3.1/24
+4: Tecnología    192.168.4.1/24
+
+III) Server
+
+ El server se debe ubicar en una de las VLANs. El server se ubicará en la VLAN 3
+ El server tendrá la IP (estática) en la VLAN 3. 192.168.3.10/24
+ El server entregará el direccionamiento IP a todas las máquinas de las distintas VLANs, respetando que el direccionamiento entregado corresponda al rango
+de las distintas VLANs. El rango en todas las VLANs va a arrancar en la IP .20 en el último octeto
+
+Rangos a manejar en las VLANs
+
+VLAN 2
+A partir de la 192.168.2.20
+VLAN 3
+A partir de la 192.168.3.20
+VLAN 4
+A partir de la 192.168.4.20
+
+El Default Gateway será la IP de cada VLAN
+
+IV) 
+1) Crear las VLANs
+ena    
+conf t 
+vlan ##
+name xxxx
+
+2) Asignar puertos a la VLAN
+* Asignar un grupo de puertos a una VLAN:
+inte
+interface range f0/10-15  					interface range f0/2-5
+Esto:
+interface range fastethernet 0/2, fastethernet 0/4, fastethernet 0/5
+switchport mode access
+switchport access vlan 10
+exit
+
+3) Configurar iphelper
+
+interface Vlan2
+ ip address 192.168.2.1 255.255.255.0
+ ip helper-address 192.168.10.2
+ no shutdown
+exit

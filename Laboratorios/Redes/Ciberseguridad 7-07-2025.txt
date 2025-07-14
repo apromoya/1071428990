@@ -1,0 +1,26 @@
+Ciberseguridad 7-07-2025
+Ip 10.13.180.232 web
+Ip  10.13.181.194 host
+
+ip.dst	// encargado de saber quien esta recibiendo la información
+ip.src 	//Esta función se encarga de saber a quien esta enviando ese ping.
+
+badssl.com 	//Usaremos esta pagina web con el fin de poner
+ip.src== 10.13.181.194 && http && ip.dst== 104.154.89.105
+
+Esta funcion que estamos aplicando en wireshark, en la pagu¿ina web de badssl nos ingresamos a login,
+que funcion se va hacer, es leer lo que se se esta logueando (En la aplicacion), lo va mostr10.13.ar en wireshark
+
+Ip Pulzo.com 18.66.255.126
+Ahora lo que se va ser es mirar que es lo que hace el HOST(Computador), como interactura con la pagina web (PULZO)
+
+tls && ip.src== 10.13.181.194 /*Ip del Host*/ && ip.dst== 18.66.255.75 /*Ip de las pagina web*/
+
+Con esto podemos mirar que hace o que interactua.
+
+------------------------------------------------------------
+Ahora cambiamos de tema
+base64.guru //vamos a trabajar en un encriptador, 
+El objetivo que vamos hacer es enviar una imagen ecriptada a otro sitiio, y detectarla
+
+de encriptar y desencriptar, sea imágenes, pdf etc.

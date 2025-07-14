@@ -1,0 +1,21 @@
+Nmap
+
+Se practico el escaneo por ping por medio de virtual box, emulando un Windows 10,
+se uso el nmap-zenmap GUI, para poder tener una buena visualizacion
+
+Host:
+BEL-205-LW-004
+IP 10.13.181.194
+MAC: C8-5A-CF-0F-A0-E6
+
+GUEST: +
+DESKTOP-PR2F3J7
+ip 10.13.180.232
+MAC 08-00-27-51-C1-F6
+
+eo
+10.13.181.1
+
+ping www.google.com
+Ip 172.217.28.100
+location pnboga-ac-in-f4.le100.net

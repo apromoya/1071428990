@@ -1,0 +1,10 @@
+14-07-2025 Ciberseguridad
+Dia de hoy estamos hablando  sobre redes wifi, mirando las cobertura etc. ejemplo las redes LAN 802.3 y La WLAN 802.11 
+ Mirando las ventajas hay buenas obciones por su movilidad y felixibilidad, permite conectarse a Internet desde cualquier lugar, dentro del área de cobertura, facilitando la movilidad
+	Faxcil instalar
+Desventajas: Seguridad, Las redes wifi pueden ser vulnerables a ataques si no se  implementan medidas de seguridad adecuadas     
+	Interferencias
+
+hand off cuando esta en cobertura y handover cuando hace un cambio o ya no esta en el rango
+
+ekahau, sisve para resolver problemas inalambricas

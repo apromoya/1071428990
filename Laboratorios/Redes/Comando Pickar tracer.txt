@@ -1,0 +1,30 @@
+Comando Pickar tracer
+enable
+
+1) Crear las VLANs
+ena    
+conf t 
+vlan ##
+name xxxx
+}
+2) Asignar puertos a la VLAN
+* Asignar un grupo de puertos a una VLAN:
+inte
+interface range f0/10-15  					interface range f0/2-5
+Esto:
+interface range fastethernet 0/2, fastethernet 0/4, fastethernet 0/5
+switchport mode access
+switchport access vlan 10
+exit
+
+3) Configurar iphelper
+
+interface Vlan2
+ ip address 192.168.2.1 255.255.255.0
+ ip helper-address 192.168.10.2
+ no shutdown
+exit
+
+
+
+show vlan brief

@@ -1,0 +1,19 @@
+10-07-2025Cibersguridad
+
+En este dia estaremos hablando sobre  "Plan de Recuperación de Desastres"
+temas como
+Incertidumbre, imposible la inviolabilidad
+Medidas de seguridad , protección de los bienes , seguros
+Efectos negativos: Imagen reputación, Procedimientos de Back Up, Sistema de reserva, Rutas alternativas, Rutas alternativas, Centros de respaldo, Evaluación y análisis de riesgo
+
+Tener en cuenta sobre las copias de seguridad: DD Ext. Cloud, NAS/SAN, Cartridge, tape backup 
+Ubicación, tener varios opciones.
+
+Hicimos un ejemplo de descifrado y cifrador de en base 58
+
+Estamos planeadno o trabajando para crear o hacer un proceso para autenticarse.
+
+creamos un sitio web Python con el Encriptador Base 64, utilizando el ip 
+
+Host : 10.13.181.194
+http://10.13.180.244:8070/cifrarbase64?textoplano=71764044
