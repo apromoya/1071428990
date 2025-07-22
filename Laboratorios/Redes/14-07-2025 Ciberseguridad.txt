@@ -1,10 +1,107 @@
 14-07-2025 Ciberseguridad
 Dia de hoy estamos hablando  sobre redes wifi, mirando las cobertura etc. ejemplo las redes LAN 802.3 y La WLAN 802.11 
- Mirando las ventajas hay buenas obciones por su movilidad y felixibilidad, permite conectarse a Internet desde cualquier lugar, dentro del área de cobertura, facilitando la movilidad
-	Faxcil instalar
+ Mirando las ventajas hay buenas opciones por su movilidad y flexibilidad, permite conectarse a Internet desde cualquier lugar, dentro del área de cobertura, facilitando la movilidad
+	Fácil instalar
 Desventajas: Seguridad, Las redes wifi pueden ser vulnerables a ataques si no se  implementan medidas de seguridad adecuadas     
 	Interferencias
 
 hand off cuando esta en cobertura y handover cuando hace un cambio o ya no esta en el rango
 
-ekahau, sisve para resolver problemas inalambricas
+ekahau, sisve para resolver problemas inalámbricas
+
+15/07/2025
+comandos para el certificado genérico por medio de chocolate
+
+en la pagina virtual hicimos un repositorio o carpeta compartida, con el fin de compartir el certificado
+
+Este fin es para crear certificados en cholatey
+entrando PowerShell, como administrador
+hicimos o instalamos "choco install mkcert" 
+también en la pagina oficial hay otro comando en install,
+
+todo con el fin de generar un certificado.
+
+16/07/2025
+
+Temas a tratar, Cumplimiento y Auditoría: 
+Tiene un Cumplimiento, 
+Revisiones (Planeación, OBJ, CRONOGRAMA, EQUIPO, HTAS, HALLAZGOS, INFORME)
+Todo basado en la ISO 27001,
+SGSI -> Tiene unos Riesgos Políticas Leg
+seguridad Informática -> Tecnología usada
+Información -> Estrategia
+Ciberseguridad -> Act Digital
+
+Deben Tener Políticas para la creación de usuarios etc, Desde estándar , o credenciales de acceso
+En temas de seguridad lo mas importante son las Políticas
+
+Contraseñas(caducidad, )
+Implementación de Políticas de Seguridad
+-> Monitorio y Actualización
+-> Ejemplo: Definir quien tiene acceso a ciertos datos y recursos mediante políticas de control de acceso
+
+Cumplimiento y Auditorio
+->Auditoría de Seguridad
+-> Cumplimiento Legal: Asegurar el cumplimiento de regulaciones como la ley de protección de datos personales y las propias del negocio
+
+Objetivos de Políticas Seguridad
+Protección de Activos, Cumplimiento Legal, Gestión de Riesgos, Confianza y reputación.
+
+Componentes de las Politicas de Seguridad
+1.Objetivos y alcance
+2. Roles y Responsabilidades
+3. Normas Procedimientos
+4. Formación y Concienciación
+5. Revisión y Actualización
+
+Ejercicio Redactar 2 políticas para el proyecto
+
+cuando se saca un política tener en cuenta, "CUANDO, DONDE , QUIEN, QUÉ, PORQUE, COMO, CUANTO."
+
+/*------------------------------------------------------------------------------------------------*/
+21/07/2025
+
+Tema hablas vamos a trabajar un laboratorio virtual, vamos a tratar con Nessus, con el fin de ir o reforzar lo aprendido.
+Ingresando a la pagina de Nessus su instalador, (x64).
+Se esta hablando Gestores de Contraseñas, este es con el fin de poder cuando son empresas grandes con tanta gente
+
+lastPass, 1Password, Dashlance.
+/*--------------------*/
+22/07/2025
+Se esta hablando sobre herramientas de seguridad como, antivirus y Antimalware, Firewalls
+Antivirus y Antimalware; Programas diseñados para detectar, prevenir y eliminar software malicioso que puede dañar el sistema o comprometer la seguridad de los datos. Estos programas buscan amenazas conocidadas y emplean técnicas heurísticas para identificar comportamientos sospechosos.
+Ejemplos: Norton, McAfee, Bitdefender,
+
+Firewalls; Sistemas de seguridad que controlan y filtran el trafico de red basado en un conjunto de reglas predefinidas para proteger una red o dispositivo de accesos no autorizados.
+Ej: Firewall de Windows Defender.
+
+Comandos usaods para powersehell
+win + r -> wf.msc
+New-NetFirewallRule -DisplayName "Permitir Ping Entrada" -Direction Inbound -Protocol ICMPv4 -Action Allow
+//Crea una nueva regla de firewall que permite la entrada de paquetes ICMPv4 (específicamente, paquetes de tipo "ping") al equipo.
+
+New-NetFirewallRule: Crea una nueva regla de firewall.
+
+-DisplayName "Permitir Ping Entrada": Nombre visible de la regla.
+
+-Direction Inbound: Aplica a tráfico entrante (desde fuera hacia el equipo).
+
+-Protocol ICMPv4: Específica el protocolo ICMP versión 4 (que incluye el comando ping).
+
+-Action Allow: La acción es permitir este tipo de tráfico
+
+New-NetFirewallRule -DisplayName "Permitir Ping Salida" -Direction Outbound -Protocol ICMPv4 -Action Allow
+//
+Crea una regla que permite que el equipo envíe pings (ICMPv4) hacia otras máquinas.
+
+-Direction Outbound: Aplica al tráfico saliente.
+
+Todo lo demás funciona igual que en el anterior.
+Remove-NetFirewallRule -Displayname "Permitir Ping"
+//
+Elimina la regla de firewall cuyo nombre visible (DisplayName) es "Permitir Ping".
+
+Remove-NetFirewallRule: Elimina reglas de firewall existentes.
+
+-DisplayName "Permitir Ping": Busca la regla con ese nombre y la elimina.
+
