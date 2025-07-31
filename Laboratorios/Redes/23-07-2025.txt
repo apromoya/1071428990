@@ -1,0 +1,30 @@
+23/07/2025
+Tecnologias de seguridad
+FW interno de GNU Linux
+Funciona por comandos
+Entrada y salida de paquetes, enrutamiento
+Definir reglas de control
+Bloquear
+Orden de las reglas si importa. Se procesan de arriba abajo
+IPTABLES actia como FW L3 y L4(IP y puertos)
+Cadenas: INPUT, OUTPUT, FOWARD (entrada 
+
+vamos a probar Kali Linux,
+Próximos comandos
+sudo su //para ingresar a administrador
+iptables -F
+iptables -nL //
+
+ifconfig
+ip a
+ 
+iptables -
+	P: significa que vamos a colocar una politica
+	A: Agregar regla
+	D: Borrar una regla
+	F: Borrar todas las reglas
+	J: saltar
+iptables -A  //Autorizar todos los datos de entrada
+iptables -A INPUT -s 'ping' -j DROP
+iptables -A INPUT -p icmp -j DROP 	//Funcion para rechazar cualquier ping
+kali

@@ -1,0 +1,55 @@
+28-07-2025
+
+¿Que es un vlan?
+¿Ques es un firewall?
+Tecnologias de seguridad
+S e implementan como en hadward y software, MIPs, AS/400,
+Funciones 
+Previenen problemas de comportamiento en el sistema o red
+detectan ataques y otras violaciones de seguridad
+detectan las vulnerabilidades
+Sistemas de detección
+origen de la información, análisis, respuesta, motor bases de datos, consola, aplicación 
+HIDS, NIDS -> Honey potey
+ids y ips, 
+hay dos ids como pasivo y activo
+ssl/tls
+Protocolos comunes vpn, shh , gre, mpls.
+
+
+ddos firewall, antivirus, ips,
+.
+
+29-07-2025 
+Temas a trabajar Snort, detectarm 
+
+Seguridad en redes Wifi
+Cifrado,  
+Autenticación, PKI, Entidad Cert
+Segmentación, IP VLANS, identificas SSID
+Control de acceso, 	MAC
+Monitoreo y detección, 
+Configuración del AP, SSID SO (aplicar parches)
+Políticas de uso, 
+Protección adicional
+
+/*---------------------------------------------------*/
+Contratación y negociocion de tecnología
+Tips y considereaciones 
+conflictos de intereses
+
+Hacker ético
+Funciones: Ejecutar periódicamente pentesting o pruebas de penetracion.
+Monitoriear redes para evitar la inyección
+
+Pentesting, simulación controlada,a para ataques en el sistema
+
+Autenticación: es el proceso la cual se verifica la identifad
+/*---------------------------------------------------*/
+Actividad
+
+/*---------------------------------------------------*/
+SIEM * elk < soc, ACL, VPN, IW, AM, IDS, IPS, VLAN, CIF, RAS, SEG RED, DLP, WAF
+cuadro comparativos
+
+ 
